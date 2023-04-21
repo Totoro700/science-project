@@ -29,3 +29,12 @@ img {
 #keywords {
 	text-align: center;
 }
+
+h1 {
+	color: green;
+}
+
+#weathering {
+	color: red;
+	text-align: center;
+}
