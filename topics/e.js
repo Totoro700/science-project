@@ -4,4 +4,4 @@ if (!link) {
     link.rel = 'icon';
     document.head.appendChild(link);
 }
-link.href = 'resc/icon.webp';
+link.href = '../resc/icon.webp';
