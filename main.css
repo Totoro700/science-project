@@ -1,5 +1,9 @@
 /* add good css (important) */
 
 * {
-	font-family: Consolas
+	font-family: Consolas;
+}
+
+#title {
+	text-align: center;
 }
