@@ -19,3 +19,9 @@ img {
 	width: 100%;
 	height: 100;
 }
+
+#importantPollutionPage {
+	text-align: center;
+	font-family: Consolas;
+	color: red;
+}
