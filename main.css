@@ -11,6 +11,10 @@
 	padding: 20px;
 }
 
+li {
+	font-size: 20px
+}
+
 body {
 	background-color: rgba(71, 86, 161, 0.5);
 }
