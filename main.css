@@ -50,3 +50,17 @@ a:visited {
 .def {
 	text-align:center;
 }
+
+#home {
+	font-size: 35px;
+	color: green;
+	margin: 50px;
+	font-weight: bold;
+}
+
+#home a:link,
+#home a:visited,
+#home a:hover {
+   color: rgba(0, 255, 255, 1);
+   
+}
