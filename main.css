@@ -7,8 +7,12 @@
 }
 
 .content {
-	margin: 50px;
-	padding: 20px;
+	margin: 75px;
+	padding: 40px;
+}
+
+p {
+	font-size: 20px;
 }
 
 li {
@@ -16,12 +20,15 @@ li {
 }
 
 body {
-	background-color: rgba(71, 86, 161, 0.5);
+	background-color: rgba(70, 148, 47, 0.55);
 }
 
 img {
-	width: 100%;
-	height: 100%;
+	width: 70%;
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 #importantPollutionPage {
@@ -34,7 +41,7 @@ img {
 	text-align: center;
 }
 
-#groundwater {
+.groundandpermea {
 	font-size: 25px;
 	text-decoration: underline;
 }
@@ -63,11 +70,11 @@ h3 {
 }
 
 a:link {
-	color: red;
+	color: inherit;
 }
 
 a:visited {
-	color: red;
+	color: inherit;
 }
 
 .def {
@@ -76,7 +83,6 @@ a:visited {
 
 #home {
 	font-size: 35px;
-	color: green;
 	margin: 50px;
 	font-weight: bold;
 }
