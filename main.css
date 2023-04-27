@@ -1,11 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
 
 * {
-	font-family: 'Courier Prime', monospace;
+	font-family: 'Nunito', sans-serif;
 }
 
 #title {
 	text-align: center;
+}
+
+#homeButton {
+	border: 2px solid #dddddd;
+	color: #c84949;
+	text-align: center;
+	background: rgb(0,249,100);
+	background: linear-gradient(146deg, rgba(0,249,100,1) 25%, rgba(24,196,237,1) 100%);
+	font-size: 35px;
+	margin: 75px 0px 0px 0px;
+	padding: 5px 5px 0px 5px;
+}
+
+@keyframes slidebg {
+	to {
+		background-position:20vw;
+	}
+}
+
+#homeButton:hover {
+	background-image: linear-gradient(10deg, rgba(24,196,237,1) 0%, rgba(0,249,100,1) 100%);
+	animation: slidebg 2s linear infinite;
+	transition: 1000ms ease;
+	color: green;
 }
 
 .content {
@@ -88,8 +112,9 @@ a:visited {
 
 #home {
 	font-size: 35px;
-	margin: 25px;
+	margin: 75px 0px 0px 10px;
 	font-weight: bold;
+	float: left;
 }
 
 #home a:link,
