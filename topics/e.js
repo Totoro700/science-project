@@ -32,6 +32,13 @@ function SetupRainbow() {
 	document.head.appendChild(style);
 }
 
+function startGame() {
+	var gameText = document.getElementById('gameText');
+	const textList = ['Rain slowly breaks down rocks on the ground', ''];
+	const random = textList[Math.floor(Math.random() * textList.length)]
+	gameText.innerText = random;
+}
+
 
 // function that generate the rainbow string
 function GetRainbowString(nbStops, saturation, luminosity) {

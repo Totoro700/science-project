@@ -43,7 +43,6 @@ function GetRainbowString(nbStops, saturation, luminosity) {
 	return colors.join();
 }
 
-
 window.addEventListener("load", function() {
 	SetupRainbow();
 });
