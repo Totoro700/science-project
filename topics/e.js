@@ -32,11 +32,55 @@ function SetupRainbow() {
 	document.head.appendChild(style);
 }
 
+var currentAnswer = "None"
+
 function startGame() {
 	var gameText = document.getElementById('gameText');
-	const textList = ['Rain slowly breaks down rocks on the ground', ''];
+	const textList = ['Rain slowly breaks down rocks on the ground', 'Flowing river pushes weathered rock to another location', 'Wind deposits sand into a sand dune'];
 	const random = textList[Math.floor(Math.random() * textList.length)]
 	gameText.innerText = random;
+	switch (random) {
+		case 'Rain slowly breaks down rocks on the ground':
+		currentAnswer = 'Weathering';
+		break;
+		case 'Flowing river pushes weathered rock to another location':
+		currentAnswer = 'Erosion';
+		break;
+		case 'Wind deposits sand into a sand dune':
+		currentAnswer = 'Deposition';
+		break;
+	}
+}
+
+var right = 0;
+var wrong = 0;
+var total = 0;
+var percentScore = 0;
+
+function scoreUpdate() {
+	percentScore = right/total*1.0;
+	score.innerText = `Correct: ${right.toString()}; Wrong: ${wrong.toString()}; Total: ${total.toString()}; Score: ${(percentScore*100).toFixed(2)}%`;
+}
+
+function updateResult(qCorrect) {
+	var score = document.getElementById('score');
+	total = total + 1;
+	if (qCorrect) {
+		right = right + 1;
+		scoreUpdate();
+	} else {
+		wrong = wrong + 1;
+		scoreUpdate();
+	}
+}
+
+function check(answer) {
+	if (answer == currentAnswer) {
+		updateResult(true);
+	} else {
+		updateResult(false);
+	}
+	startGame();
 }
 
 

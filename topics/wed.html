@@ -30,14 +30,18 @@
 			<p id="deposition">Deposition is when erosion deposits the weathered rock to a location. Erosion and deposition are very similar but deposition is the event when erosion finally deposits the weathered rock into a new location. (no picture for this one)</p>
 			<!--add some sort of game-->	
 			<br>
-			<h3>Practice game (I spent too much time on this)</h3>
+			<hr style="border: 4px solid rgb(0, 225, 255);
+			border-radius: 5px;">
+			<h3 style="text-align: center;">Practice game (I spent too much time on this)</h3>
 			<div id="game">
 				<button id="startButton" onclick="document.getElementById('startButton').style.visibility = 'hidden';startGame();">Click to start</button>
 				<p id="gameText"></p>
 				<br>
-				<button class="gameButton">Weathering</button>
-				<button class="gameButton">Erosion</button>
-				<button class="gameButton">Deposition</button>
+				<button class="gameButton" onclick="check('Weathering')">Weathering</button>
+				<button class="gameButton" onclick="check('Erosion')">Erosion</button>
+				<button class="gameButton" onclick="check('Deposition')">Deposition</button>
+				<br>
+				<p id="score">Correct: 0; Wrong: 0; Score: 0%</p>
 			</div>
 		</div>
     </body>
