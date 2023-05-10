@@ -27,7 +27,7 @@ function startGame() {
             break;
         case 'Glaciers slowly pushing rock':
             currentAnswer = 'Erosion';
-        break;
+        	break;
         case 'Moving water carves a river into a canyon over a long time':
             currentAnswer = 'Weathering';
             break;
