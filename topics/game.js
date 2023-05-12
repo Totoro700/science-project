@@ -9,7 +9,7 @@ function startGame() {
 	//var button = document.getElementById('startButton');
 	//button.style = 'visibility: hidden; opacity: 0; transition: visibility 0s 1s, opacity 1s linear;';
 	var gameText = document.getElementById('gameText');
-	const textList = ['Rain slowly breaks down rocks on the ground', 'Flowing river pushes weathered rock to another location', 'Wind deposits sand into a sand dune', 'Wind pushes rocks off a cliff causing them to break', 'Glaciers slowly pushing rock', 'Moving water carves a river into a canyon over a long time', 'River deposits large amounts of sand at the mouth of the river', 'Plant roots splitting a rock apart', 'Water in the ocean breaks down rocks on the beach into sand', 'Ocean washes sand from one beach to another', 'Ocean slowly placing sediments into sandbars or barrier islands', ''];
+	const textList = ['Rain slowly breaks down rocks on the ground', 'Flowing river pushes weathered rock to another location', 'Wind deposits sand into a sand dune', 'Hills being built through dropping sediment from wind', 'Glaciers slowly pushing rock', 'Moving water carves a river into a canyon over a long time', 'River deposits large amounts of sand at the mouth of the river', 'Plant roots splitting a rock apart', 'Water in the ocean breaks down rocks on the beach into sand', 'Ocean washes sand from one beach to another', 'Ocean slowly placing sediments into sandbars or barrier islands'];
 	const random = textList[Math.floor(Math.random() * textList.length)];
     gameText.innerText = random;
 	switch (random) {
@@ -22,8 +22,8 @@ function startGame() {
 		case 'Wind deposits sand into a sand dune':
 		    currentAnswer = 'Deposition';
 		    break;
-        case 'Wind pushes rocks off a cliff causing them to break':
-            currentAnswer = 'Weathering';
+        case 'Hills being built through dropping sediment from wind':
+            currentAnswer = 'Deposition';
             break;
         case 'Glaciers slowly pushing rock':
             currentAnswer = 'Erosion';
@@ -31,7 +31,7 @@ function startGame() {
         case 'Moving water carves a river into a canyon over a long time':
             currentAnswer = 'Weathering';
             break;
-        case 'River deposits large amounts of sand at the mouth of the river':
+        case 'River deposits large amounts of sand at the mouth of the river creating deltas':
             currentAnswer = 'Deposition';
             break;
         case 'Plant roots splitting a rock apart':
@@ -68,10 +68,13 @@ function updateResult(qCorrect) {
 }
 
 function check(answer) {
+	var result = document.getElementById('result');
 	if (answer == currentAnswer) {
 		updateResult(true);
+		result.innerText = 'Correct!';
 	} else {
 		updateResult(false);
+		result.innerText = 'Incorrect!';
 	}
 	startGame();
 }
