@@ -7,7 +7,7 @@ if (!link) {
 }
 link.href = 'resc/icon.webp';
 
-let nb_stops = 60; // 60 color stops should be enough
+let nb_stops = 12; // 60 color stops should be enough
 let dir = "left"; // left, right, top, bottom
 
 function SetupRainbow() {

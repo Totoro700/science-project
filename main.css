@@ -11,7 +11,8 @@
 #homeButton {
 	align-items: center;
 	appearance: none;
-	background-color: lightslategray;
+	background: rgb(29,245,242);
+	background: linear-gradient(214deg, rgba(29,245,242,0.69) 0%, rgba(84,125,212,0.69) 100%);
 	border-radius: 4px;
 	border-width: 0;
 	box-shadow: rgba(4, 205, 255, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#479a99 0 -3px 0 inset;
@@ -35,7 +36,7 @@
 
 #homeButton:hover {
 	background-color: rgb(57, 114, 172);
-	box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(0, 255, 191, 0.4) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+	box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(0, 255, 191, 0.4) 0 7px 13px -3px, #34a1d4 0 -3px 0 inset;
 	transform: translateY(-2px);
 }
 
@@ -120,7 +121,7 @@ li {
 }
 
 body {
-	background-color: rgba(70, 148, 47, 0.55);
+	background-color: rgba(193, 160, 85, 0.815);
 }
 
 img {
@@ -181,7 +182,7 @@ a:visited {
 }
 
 #deposition {
-	margin-bottom: 500px;
+	margin-bottom: 300px;
 }
 
 .def {
