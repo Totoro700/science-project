@@ -156,6 +156,11 @@ h3 {
 	font-size: 32px;
 }
 
+#amongusImg {
+	float: right;
+	text-align: right;
+}
+
 #pageImage {
 	width: 300px;
 	height: 300px;

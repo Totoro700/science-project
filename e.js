@@ -44,5 +44,5 @@ function GetRainbowString(nbStops, saturation, luminosity) {
 }
 
 window.addEventListener("load", function() {
-	SetupRainbow();
+	//SetupRainbow();
 });
